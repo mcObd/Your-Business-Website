@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forms</title>
+    <link rel="stylesheet" href="/CSS/Login.css">
+    <link rel="stylesheet" href="/CSS/navbar_footer.css">
+    <link rel="stylesheet" href="/CSS/media_queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar_wrapper">
+                <h1>
+                <i class="fa-solid fa-rocket"></i>  
+                Your Business
+                </h1>
+
+                <ul class="nav_links">
+                    <input type="checkbox" name="" id="checkbox">
+                    <label class="hamburger" for="checkbox">&#9776;</label>
+                    <div class="links_container">
+                               <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Login</a>
+                        </li>
+                        
+                            <button type="submit" class="btn_signup">
+                                Sign Up
+                        </button>
+  
+                    </div>                
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="section1">
+        <div class="login_card">
+            <div class="user_wrapper">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <h1>Welcome Back</h1>
+            <p>Sign in to your account</p>
+            <form>
+                <label for="email_field" >Email Address</label>
+                <div class="input_wrapper">
+                    <span class="fa-solid fa-envelope"></span>
+                    <input type="email" class="field" id="email_field">
+                </div>
+
+                <label for="password_field">Password</label>
+                <div class="input_wrapper">
+                    <span class="fa-solid fa-lock"></span>
+                    <input type="password" class="field" id="password_field">
+                    <span class="fa-solid fa-eye"></span>
+                </div>
+                <div class="checkbox_wrapper">
+                    <input type="checkbox"> Remember me
+                </div>
+                
+                <button class="signup_btn" >
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Sign In
+                </button>
+                <a class="forgot_password" href="">Forgot your password?</a>
+            </form>
+            <hr>
+            <p class="sign_in">Or sign in with:</p>
+            <div class="social_btn">
+                <button class="">
+                    <i class="fa-brands fa-google"></i>
+                    Continue with Google
+                </button>
+                <button class="">
+                    <i class="fa-brands fa-facebook"></i>
+                    Continue with Facebook
+                </button>
+            </div>
+            <p class="sign up">
+                Don't have an account?
+                <a href="#"> Sign up here</a>
+            </p>
+        </div>
+    </section>
+
+     <footer>
+        <div class="container">
+            <div class="flex_wrapper">
+                <div class="flex_item">
+                    <h4>Your Business</h4>
+                    <p>Providing innovative solutions for <br> modern businesses since 2020
+                    </p>
+                    <div class="social_icons">
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f">
+                            </i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-twitter">
+                            </i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-linkedin-in">
+                            </i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex_item">
+                    <h4>Quick Links</h4>
+                    <ul class="alt">
+                        <a href="">
+                        <li>Home</li>
+                        </a>
+                        <a href="">
+                        <li>About</li>
+                        </a>
+                        <a href="">
+                        <li>Services</li>
+                        </a>
+                        <a href="">
+                        <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="flex_item">
+                    <h4 class="ci">Contact Info</h4>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i> 123 Business St, City, State 12345
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i> (555) 123-4567
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i> info@yourbusiness.com
+                    </p>
+                </div>
+
+                <div class="flex_item">
+                    <h4>Newsletter</h4>
+                    <p>
+                        Suscribe to get updates on <br> our latest offers
+                    </p>
+                    <form >
+                        <input class="mail"
+                        type="email" name="email" id="email" placeholder="your email">
+                        <a href="" class="sub">
+
+                        <button type="submit" class="btn_sub">
+                        Subscribe
+                        </button>
+                    </form>
+                </div>
+        </div>
+            <hr>
+            <div class="footnote_wrapper">
+            <p>
+                &copy;2024 Your Bussiness. All right reserved.
+            </p> 
+                <div class="pt_wrapper">
+                    <p>Privacy Policy</p>
+                    <p>Terms Of Service</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

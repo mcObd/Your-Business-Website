@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(248, 249, 251);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width:90%;
+    /* margin: 0 auto; */
+}
+
+/* login form */
+.section1 {
+    /* width: 100%; */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login_card {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 100px rgba(0,0,0,0.1);
+    padding-top: 2rem;
+}
+.user_wrapper {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(14, 110, 249);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.login_card h1{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+
+.login_card p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: grey;
+}
+.login_card form {
+    margin-top: 1.5rem;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem ;
+    border-bottom: 1px solid rgb(206, 206, 206)
+}
+.login_card form label {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.input_wrapper {
+    display: flex;
+}
+.input_wrapper span {
+    width: 15%;
+    height: 50px;
+    font-size: 1rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(238, 238, 240);
+    color: rgb(59, 59, 59);
+}
+ .input_wrapper input {
+    width: 85%;
+    border: 2px solid #f8f9fa;
+    height: 50px;
+    padding: 1rem;
+ }
+ .input_wrapper input[type="password"]{
+    width: 65%;
+ }
+ .input_wrapper span:nth-of-type(1){
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(225, 226, 227);
+ }
+
+ .input_wrapper span:nth-of-type(2){
+    border-right: none;
+    border-left:  1px solid rgb(238, 238, 240);
+ }
+ .input_wrapper span:nth-of-type(2):hover{
+    background-color: black;
+    color: white;
+ }
+ .checkbox_wrapper {
+    font-weight: 100;
+    }   
+
+.signup_btn {
+    padding: 20px 22px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(13, 110, 253);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+}
+.signup_btn:hover {
+    background-color: rgb(13, 13, 110);
+}
+form a {
+    text-align: center;
+    font-size: 1rem;
+    color: #0d6efd;
+    padding-top: 0.5rem;
+    font-weight: 200;
+}
+.forgot_password{
+    padding: 1rem 0;
+}
+.sign_in {
+    color: black;
+    font-weight: 200;
+    padding: 1rem 0;
+}
+.social_btn {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.social_btn button {
+    width: 70%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+      transition: 0.5s;
+}
+.social_btn button {
+    color: red;
+}
+.social_btn button:nth-child(2){
+    color: rgb(13, 110, 253);
+}
+.social_btn button:hover {
+    color: white;
+    background-color: red;
+    padding: 1rem ;
+}
+.social_btn button:nth-child(2):hover{
+    color: white;
+    background-color:  rgb(13, 110, 253);
+}
+.login_card p:last-of-type > a {
+    font-size: 1rem;
+    font-weight: 400;
+    color:  rgb(13, 110, 253);
+}
+.login_card p:last-of-type {
+    font-size: 1rem;
+    font-weight: 400;
+    color: grey;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+}
+h4{
+    color: white;
+    padding-bottom: 1rem;
+    justify-content: left;
+}
+

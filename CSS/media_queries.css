@@ -1,0 +1,50 @@
+
+@media (max-width: 900px) {
+    .flex_wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .flex_item {
+        width: 100%;
+    }
+    .footnote_wrapper {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width:768px) {
+    .login_card {
+        width: 100%;
+    }
+    .links_container{
+        display: none;
+    }
+    .nav_links .hamburger{
+
+        display: block;
+
+    }
+    #checkbox:checked ~ .links_container{
+        width: 100%;
+        background-color: #0d6efd;
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        z-index: 1000;
+    }
+    .links_container li{
+        padding: 0.5rem 2rem;
+    }
+    .btn_signup{
+        width: 100%;
+        text-align: center;
+        transition: all 100ms;
+    }
+    .btn_signup:hover{
+        background-color: #f8f9fa;
+        color: #0d6efd;
+    }
+}
