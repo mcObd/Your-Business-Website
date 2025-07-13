@@ -13,8 +13,42 @@
 ::-webkit-scrollbar-track {
   background: #f8f9fb; /* Your color */
 }
-@media (max-width: 900px) {
-    .flex_wrapper {
+@media (max-width: 762px) {
+      .links_container{
+        display: none;
+    }
+    .nav_links .hamburger{ 
+
+        display: block;
+
+    }
+    #checkbox:checked ~ .links_container{
+        width: 100%;
+        background-color: #0d6efd;
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        z-index: 1000;
+    }
+    .links_container li{
+        padding: 0.5rem 2rem;
+    }
+    .btn_signup{
+        width: 100%;
+        text-align: center;
+        transition: all 100ms;
+    }
+    .btn_signup:hover{
+        background-color: #f8f9fa;
+        color: #0d6efd;
+    }
+}
+ 
+
+@media (max-width: 900px) and (min-width: 601px){
+
+ .flex_wrapper {
         flex-direction: column;
         gap: 2rem;
     }
@@ -26,9 +60,7 @@
         gap: 0.5rem;
         align-items: flex-start;
     }
-}
 
-@media (max-width:768px) {
       .hero{
         padding:3rem 0;
     }
@@ -79,40 +111,62 @@
     .login_card {
         width: 100%;
     }
-    .links_container{
-        display: none;
-    }
-    .nav_links .hamburger{ 
+  
 
-        display: block;
+    .about_wrapper{
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+    .about_wrapper .about_text, .about_img{
+        width: 100%;
+        padding: 1rem;
+    }
+      .aitem{
+    width: 50%; 
+}
+.about_staff {
+    grid-template-columns: repeat(2, 1fr);
+}
+.about_staff .staff_card {
+    max-width: 350px;
+    max-height: 300px;
+}
+.about_staff_wrapper h2 {
+    font-size: 2rem;
+}
+.about_staff_wrapper p {
+    font-size: 1rem;
+}
+.about_staff_wrapper i {
+    font-size: 1rem;
+}
+}
+/* Phone: 600px and below */
+@media (max-width: 600px) {
 
+    .about_wrapper{
+        flex-direction: column;
+        padding: 2rem 0;
     }
-    #checkbox:checked ~ .links_container{
+    .about_wrapper .about_text, .about_img{
         width: 100%;
-        background-color: #0d6efd;
-        display: block;
-        position: absolute;
-        top: 60px;
-        left: 0px;
-        z-index: 1000;
+        padding: 1rem;
     }
-    .links_container li{
-        padding: 0.5rem 2rem;
-    }
-    .btn_signup{
-        width: 100%;
-        text-align: center;
-        transition: all 100ms;
-    }
-    .btn_signup:hover{
-        background-color: #f8f9fa;
-        color: #0d6efd;
-    }
+    .aitem{
+    width: 50%; 
+}
+.about_goal_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about_goal_card {
+    width: 100%;
 }
 
-
-/* Moblie : 320px - 767px   */
- 
-@media screen and (max-width:320px) {
-
+.about_staff {
+    grid-template-columns: repeat(1, 1fr);
+}
 }
