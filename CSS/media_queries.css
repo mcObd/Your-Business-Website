@@ -140,6 +140,16 @@
 .about_staff_wrapper i {
     font-size: 1rem;
 }
+  .services_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .service_card {
+        padding: 1.5rem 1rem;
+    }
+    .services_header h1 {
+        font-size: 2rem;
+    }
 }
 /* Phone: 600px and below */
 @media (max-width: 600px) {
@@ -169,4 +179,17 @@
 .about_staff {
     grid-template-columns: repeat(1, 1fr);
 }
+ .services_grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .service_card {
+        padding: 1rem 0.5rem;
+    }
+    .services_header h1 {
+        font-size: 1.5rem;
+    }
+    .services_header p {
+        font-size: 1rem;
+    }
 }
