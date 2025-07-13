@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Your Business Website</title>
+       <link rel="shortcut icon" href="/Images/rocket-icon-template-illustration-vector.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/Contact.css">
+    <link rel="stylesheet" href="/CSS/navbar_footer.css">
+    <link rel="stylesheet" href="/CSS/media_queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+              <!-- NAV -->
+        <nav class="navbar">
+        <div class="container">
+            <div class="navbar_wrapper">
+                <h1>
+                <i class="fa-solid fa-rocket"></i>  
+                Your Business
+                </h1>
+
+                <ul class="nav_links">
+                    <input type="checkbox" name="" id="checkbox">
+                    <label class="hamburger" for="checkbox">&#9776;</label>
+                    <div class="links_container">
+                               <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="About.html">About</a>
+                        </li>
+                        <li>
+                            <a href="Services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="Contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="Login.html">Login</a>
+                        </li>
+                        
+                            <button type="submit" class="btn_signup">
+                                Sign Up
+                        </button>
+  
+                    </div>                
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+<!-- contact us -->
+ 
+<div class="contact_header">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Reach out with your questions, feedback, or project inquiries.</p>
+</div>
+
+<!-- Contact Section -->
+<section class="contact_section">
+  <div class="contact_container">
+    <div class="contact_form_wrapper">
+      <h2>Send us a Message</h2>
+      <form class="contact_form">
+        <div class="form_row">
+          <div class="form_group">
+            <label for="first_name">First Name *</label>
+            <input type="text" id="first_name" name="first_name" required>
+          </div>
+          <div class="form_group">
+            <label for="last_name">Last Name *</label>
+            <input type="text" id="last_name" name="last_name" required>
+          </div>
+        </div>
+        <div class="form_group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form_group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form_group">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company">
+        </div>
+        <div class="form_group">
+          <label for="service">Service Interested In</label>
+          <select id="service" name="service">
+            <option value="">Select a service</option>
+            <option value="web">Web Development</option>
+            <option value="mobile">Mobile Development</option>
+            <option value="cloud">Cloud Solutions</option>
+            <option value="cyber">Cybersecurity</option>
+            <option value="marketing">Digital Marketing</option>
+            <option value="consulting">Consulting Services</option>
+          </select>
+        </div>
+        <div class="form_group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form_group form_checkbox">
+          <input type="checkbox" id="subscribe" name="subscribe">
+          <label for="subscribe">Subscribe to our newsletter for updates and offers</label>
+        </div>
+        <button type="submit" class="btn_send"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </form>
+    </div>
+    <div class="contact_info_wrapper">
+      <h2>Get in Touch</h2>
+      <div class="contact_info_item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <strong>Address</strong><br>
+          123 Business Street<br>
+          Suite 100<br>
+          City, State 12345
+        </div>
+      </div>
+      <div class="contact_info_item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <strong>Phone</strong><br>
+          (555) 123-4567
+        </div>
+      </div>
+      <div class="contact_info_item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <strong>Email</strong><br>
+          info@yourbusiness.com
+        </div>
+      </div>
+      <div class="contact_info_item">
+        <i class="fas fa-clock"></i>
+        <div>
+          <strong>Business Hours</strong><br>
+          Monday - Friday: 9:00 AM - 6:00 PM<br>
+          Saturday: 10:00 AM - 4:00 PM<br>
+          Sunday: Closed
+        </div>
+      </div>
+      <div class="contact_info_social">
+        <span>Follow Us</span><br>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Find Us Section -->
+<section class="findus_section">
+  <h2 style="text-align:center; margin:2rem 0 1rem 0;">Find Us</h2>
+  <div class="findus_map">
+    <div class="map_placeholder">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537363153169!3d-37.81627977975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f6e6b1%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1620211234567!5m2!1sen!2sus"
+        width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p style="margin-top:1rem;">123 Business Street, City, State 12345</p>
+    </div>
+  </div>
+</section>
+
+
+      <!-- FOOTER -->
+     <footer>
+        <div class="container">
+            <div class="flex_wrapper" data-aos="fade-up" data-aos-duration="1000">
+                <div class="flex_item">
+                    <h4>Your Business</h4>
+                    <p>Providing innovative solutions for <br> modern businesses since 2020
+                    </p>
+                    <div class="social_icons">
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f">
+                            </i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-twitter">
+                            </i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-linkedin-in">
+                            </i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex_item">
+                    <h4>Quick Links</h4>
+                    <ul class="alt">
+                          <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="About.html">About</a>
+                        </li>
+                        <li>
+                            <a href="Services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="Contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="Login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex_item">
+                    <h4 class="ci">Contact Info</h4>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i> 123 Business St, City, State 12345
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i> (555) 123-4567
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i> info@yourbusiness.com
+                    </p>
+                </div>
+
+                <div class="flex_item">
+                    <h4>Newsletter</h4>
+                    <p>
+                        Suscribe to get updates on <br> our latest offers
+                    </p>
+                    <form>
+                        <input class="mail"
+                        type="email" name="email" id="email" placeholder="your email">
+                        <button type="submit" class="btn_sub">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+        </div>
+            <hr>
+            <div class="footnote_wrapper">
+            <p>
+                &copy;2024 Your Bussiness. All right reserved.
+            </p> 
+                <div class="pt_wrapper">
+                    <p>Privacy Policy</p>
+                    <p>Terms Of Service</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <!-- Vercel Analytics -->
+    <script defer src="https://vercel.com/analytics/script.js"></script>
+
+    <!-- aos animation -->
+     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+     <!-- aos initialization -->
+     <script>AOS.init();</script>
+</body>
+</html>
