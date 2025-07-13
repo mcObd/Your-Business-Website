@@ -1,4 +1,18 @@
+/* Change scrollbar track */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Change scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #0d6efd; /* Your color */
+  border-radius: 5px;
+}
+
+/* Change scrollbar track background */
+::-webkit-scrollbar-track {
+  background: #f8f9fb; /* Your color */
+}
 @media (max-width: 900px) {
     .flex_wrapper {
         flex-direction: column;
@@ -15,13 +29,60 @@
 }
 
 @media (max-width:768px) {
+      .hero{
+        padding:3rem 0;
+    }
+
+
+    .flex_container{
+        flex-direction: column;
+    }
+    .text_wrapper{
+        width: 100%;
+        padding: 10rem 0;
+        text-align: center;
+    }
+    .text_wrapper h1{
+        font-size: 35px;
+    }
+
+    .text_wrapper p{
+        line-height: 2rem;
+    }
+    
+    .img_wrapper{
+        width: 100%;
+     }
+
+     /* our services media styles */
+
+
+    .our_services h1{
+        font-size: 2rem;
+       }
+
+    .our_services .p1{
+        padding-top: 1rem;
+    }
+
+    .card_wrapper{
+        flex-direction: column;
+        align-items: center;
+        padding:2rem 0;
+    }
+    .card-item{
+        padding: 2rem;
+        width: 90%;
+        border-bottom: none;
+    }
+
     .login_card {
         width: 100%;
     }
     .links_container{
         display: none;
     }
-    .nav_links .hamburger{
+    .nav_links .hamburger{ 
 
         display: block;
 
@@ -47,4 +108,11 @@
         background-color: #f8f9fa;
         color: #0d6efd;
     }
+}
+
+
+/* Moblie : 320px - 767px   */
+ 
+@media screen and (max-width:320px) {
+
 }

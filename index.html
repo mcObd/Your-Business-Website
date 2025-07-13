@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>
+        Your Business - Home
+    </title>
     <link rel="stylesheet" href="/CSS/Home.css">
     <link rel="stylesheet" href="/CSS/navbar_footer.css">
     <link rel="stylesheet" href="/CSS/media_queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <!-- NAV -->
@@ -27,13 +31,13 @@
                             <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a href="About.html">About</a>
                         </li>
                         <li>
-                            <a href="#">Services</a>
+                            <a href="Services.html">Services</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="Contact.html">Contact</a>
                         </li>
                         <li>
                             <a href="Login.html">Login</a>
@@ -52,7 +56,7 @@
  <section class="hero">
     <div class="container">
         <div class="flex_container">
-            <div class="text_wrapper">
+            <div class="text_wrapper" data-aos="fade-right" data-aos-duration="1000">
                <h1>Welcome to Your <br> Business</h1>
             <p>Your success is our priority. We deliver expert solutions and support to help your business grow.</p>
               <div class="btn_wrapper">
@@ -60,17 +64,60 @@
                 <button class="btn_get_started">Get Started</button>
               </div>
             </div>
-            <div class="img_wrapper">
+            <div class="img_wrapper " data-aos="fade-left" data-aos-duration="1000">
                 <img src="/Images/hero_image.jpg" alt="">
             </div>
         </div>
     </div>
  </section>
  <!-- HERO SECTION  -->
+
+      <!-- our services start  -->
+    <section class="our_services">
+        <div class="container">
+            <h1>Why Chose Us?</h1>
+            <p class="p1">
+                We deliver exceptional results through innovation, expertise, and dedication.
+            </p>
+            <div class="card_wrapper">
+                <div class="card-item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="icon_wrapper blue">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p style="font-size: 1.15em;">
+                        Cutting-edge solutions tailored to your business needs.
+                    </p>
+                </div>
+                <div class="card-item" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="icon_wrapper green">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Team</h3>
+                    <p style="font-size: 1.15em;">
+                        Experienced professionals dedicated to your success.
+                    </p>
+                </div>
+                <div class="card-item" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="icon_wrapper yellow">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p style="font-size: 1.15em;">
+                        Assistance whenever you need it
+                        24/7 Support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- our services end -->
+
+
     <!-- FOOTER -->
      <footer>
         <div class="container">
-            <div class="flex_wrapper">
+            <div class="flex_wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <div class="flex_item">
                     <h4>Your Business</h4>
                     <p>Providing innovative solutions for <br> modern businesses since 2020
@@ -152,7 +199,14 @@
             </div>
         </div>
     </footer>
+
         <!-- Vercel Analytics -->
     <script defer src="https://vercel.com/analytics/script.js"></script>
+
+    <!-- aos animation -->
+     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+     <!-- aos initialization -->
+     <script>AOS.init();</script>
 </body>
 </html>
