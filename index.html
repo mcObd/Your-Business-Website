@@ -32,15 +32,17 @@
     <link rel="canonical" href="https://yourbusiness.com/index.html">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpg" sizes="32x32" href="/Images/rocket-icon-template-illustration-vector.jpg">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="Images/rocket-icon-template-illustration-vector.jpg">
 
     <!-- CSS links -->
-    <link rel="stylesheet" href="/CSS/Home.css">
-    <link rel="stylesheet" href="/CSS/navbar_footer.css">
-    <link rel="stylesheet" href="/CSS/media_queries.css">
+    <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="stylesheet" href="CSS/navbar_footer.css">
+    <link rel="stylesheet" href="CSS/media_queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
+    <!-- JavaScript -->
+    <link rel="stylesheet" href="javascript/ai.js">
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -122,12 +124,24 @@
               </div>
             </div>
             <div class="img_wrapper " data-aos="fade-up" data-aos-duration="1000">
-                <img src="/Images/hero_image.jpg" alt="">
+                <img src="Images/hero_image.jpg" alt="">
             </div>
         </div>
     </div>
  </section>
  <!-- HERO SECTION  -->
+
+
+
+ <!-- ai -->
+
+<h1>Ask DistilBERT a question:</h1>
+  <input id="prompt" placeholder="Type something…" />
+  <button id="run">Submit</button>
+  <pre id="output"></pre>
+
+  
+
 
       <!-- our services start  -->
     <section class="our_services">
@@ -268,5 +282,17 @@
 
      <!-- aos initialization -->
      <script>AOS.init();</script>
+     <script>
+    document.getElementById("run").addEventListener("click", async () => {
+      const prompt = document.getElementById("prompt").value;
+      const res = await fetch("/api/hf-proxy", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ inputs: prompt })
+      });
+      const json = await res.json();
+      document.getElementById("output").textContent = JSON.stringify(json, null, 2);
+    });
+  </script>
 </body>
 </html>
