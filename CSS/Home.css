@@ -7,9 +7,10 @@
 body{
     background-color: rgb(248, 249, 251);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}  .hero{
+}  
+.hero{
     background-color: #6c6cd1;
-    padding:15rem 0;
+    padding: 10rem 0;
 }
 .links_container li:nth-of-type(1) a {
     color: white;
@@ -18,7 +19,6 @@ body{
 .flex_container{
     width: 100%;
     display: flex;
-    /* border: 1px solid white; */
 }
 .text_wrapper{
     width: 60%;
